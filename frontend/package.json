@@ -4,11 +4,11 @@
   "private": true,
   "main": "./src/index.js",
   "dependencies": {
-    "@layr/component": "^2.0.18",
-    "@layr/component-http-client": "^2.0.22",
-    "@layr/react-integration": "^2.0.79",
-    "@layr/routable": "^2.0.62",
-    "@layr/storable": "^2.0.28",
+    "@layr/component": "^2.0.23",
+    "@layr/component-http-client": "^2.0.29",
+    "@layr/react-integration": "^2.0.89",
+    "@layr/routable": "^2.0.72",
+    "@layr/storable": "^2.0.36",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }

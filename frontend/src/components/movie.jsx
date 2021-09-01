@@ -3,7 +3,7 @@ import {Routable} from '@layr/routable';
 import React, {useMemo} from 'react';
 import {layout, page, view, useData, useAction} from '@layr/react-integration';
 
-export const createMovieComponent = (Base) => {
+export const extendMovie = (Base) => {
   class Movie extends Routable(Base) {
     @consume() static Application;
 

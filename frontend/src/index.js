@@ -1,7 +1,7 @@
 import {ComponentHTTPClient} from '@layr/component-http-client';
 import {Storable} from '@layr/storable';
 
-import {createApplicationComponent} from './components/application';
+import {extendApplication} from './components/application';
 
 export default async () => {
   const client = new ComponentHTTPClient(process.env.BACKEND_URL, {
@@ -13,7 +13,7 @@ export default async () => {
 
   const BackendApplicationProxy = await client.getComponent();
 
-  const Application = createApplicationComponent(BackendApplicationProxy);
+  const Application = extendApplication(BackendApplicationProxy);
 
   return Application;
 };
