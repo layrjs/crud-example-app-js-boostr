@@ -1,13 +1,16 @@
 export default () => ({
   type: 'application',
 
-  name: 'CRUD Example App',
-  description: 'An example showing how to build a simple CRUD app with Layr and Boostr.',
-
   services: {
     frontend: './frontend',
     backend: './backend',
     database: './database'
+  },
+
+  environment: {
+    APPLICATION_NAME: 'CRUD Example App',
+    APPLICATION_DESCRIPTION:
+      'An example showing how to build a simple CRUD app with Layr and Boostr.'
   },
 
   stages: {
